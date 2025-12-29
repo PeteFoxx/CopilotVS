@@ -5,15 +5,18 @@
 Brief description of the change and the rationale.
 
 ## Type of change
+
 - Bug fix
 - New feature
 - Documentation
 - Other
 
 ## How to test
+
 - Steps to reproduce or commands to run
 
 ## Checklist
+
 - [ ] Code builds locally
 - [ ] Tests pass
 - [ ] Lint passes

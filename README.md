@@ -1,10 +1,12 @@
 # Example TypeScript App
 
 ![CI](https://github.com/PeteFoxx/CopilotVS/actions/workflows/ci.yml/badge.svg)
+![Coverage](https://codecov.io/gh/PeteFoxx/CopilotVS/branch/master/graph/badge.svg)
 
 Minimal Express + TypeScript example to provide a concrete project structure for Copilot instructions and quick local development.
 
 Requirements
+
 - Node.js 18+
 - npm
 
@@ -28,6 +30,7 @@ npm test
 ```
 
 Useful scripts
+
 - `npm run dev` — run in dev mode with auto-reload
 - `npm run build` — compile TypeScript to `dist/`
 - `npm start` — run compiled app

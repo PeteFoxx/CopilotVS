@@ -1,0 +1,15 @@
+name: Coverage Report
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types:
+      - completed
+
+jobs:
+  comment:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post coverage badge notice
+        run: echo "Coverage workflow ran. See coverage badge in README."
