@@ -7,6 +7,12 @@ app.get("/", (req, res) => {
   res.json({ message: "Hola desde Example TS App" });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+// Export the app for testing. Only start listening when this file
+// is run directly to avoid opening network ports during tests.
+export default app;
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+  });
+}
