@@ -20,10 +20,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run tests with coverage
-        run: npm test --silent -- --coverage
+        run: npm run test:coverage --silent
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
